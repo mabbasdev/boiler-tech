@@ -115,6 +115,10 @@ table {
 	float: none;
 }
 
+.justify-content-center {
+	justify-content: center;
+}
+
 ::selection {
 	background: #484848;
 	color: #fff;
