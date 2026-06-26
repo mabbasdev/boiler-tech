@@ -40,6 +40,8 @@
     <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/flaticon.min.css">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- IMAGE POPUP -->
     <link rel="stylesheet" type="text/css" href="css/lc_lightbox.css">
 
@@ -526,14 +528,44 @@
 
                     <div class="s-section">
                         <div class="row justify-content-center">
-                            <!-- COLUMNS 1: Boiler Installation -->
+
+                            <style>
+                                /* Container Fix for Font Icons */
+                                .wt-icon-box-wraper.circle-bg .icon-lg {
+                                    display: flex !important;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 0 auto 20px;
+                                    border-radius: 50%;
+                                }
+
+                                .icon-cell i.bx {
+                                    font-size: 42px !important;
+                                    color: #ff5e15 !important;
+                                    display: inline-block;
+                                    line-height: 1;
+                                    vertical-align: middle;
+                                }
+
+                                .service-icon-box-three .wt-icon-box-wraper i.bx {
+                                    transition: transform 0.3s ease, color 0.3s ease;
+                                }
+
+                                .service-icon-box-three:hover .wt-icon-box-wraper i.bx {
+                                    color: #fff !important;
+                                    transform: scale(1.1);
+                                }
+                            </style>
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center" data-service="installation">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-1.png"
-                                                    alt="Boiler Installation"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-wrench"></i>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -543,8 +575,8 @@
                                     </div>
 
                                     <div class="service-icon-box-content">
-                                        <p>Professional deployment of advanced heating systems with
-                                            precision configuration.</p>
+                                        <p>Professional deployment of advanced heating systems with precision
+                                            configuration.</p>
                                         <a href="javascript:;"
                                             class="site-button-link site-text-primary open-modal-link">Read More</a>
                                     </div>
@@ -552,19 +584,20 @@
                                 </div>
                             </div>
 
-                            <!-- COLUMNS 2: Routine Maintenance -->
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center" data-service="maintenance">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-2.png"
-                                                    alt="Routine Maintenance"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-cog"></i>
+                                            </span>
                                         </div>
                                     </div>
 
                                     <div class="service-icon-box-title">
-                                        <h3 class="wt-title"><a href="javascript:;" class="open-modal-link">Maintenance</a></h3>
+                                        <h3 class="wt-title"><a href="javascript:;"
+                                                class="open-modal-link">Maintenance</a></h3>
                                     </div>
 
                                     <div class="service-icon-box-content">
@@ -577,14 +610,14 @@
                                 </div>
                             </div>
 
-                            <!-- COLUMNS 3: Emergency Repairs -->
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center" data-service="repairs">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-3.png"
-                                                    alt="Emergency Repairs"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-time-five"></i>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -603,14 +636,14 @@
                                 </div>
                             </div>
 
-                            <!-- COLUMNS 4: Efficiency Upgrades -->
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center" data-service="upgrades">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-4.png"
-                                                    alt="Efficiency Upgrades"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-tachometer"></i>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -629,15 +662,15 @@
                                 </div>
                             </div>
 
-                            <!-- COLUMNS 5: Water Treatment -->
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center"
                                     data-service="water_treatment">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-2.png"
-                                                    alt="Water Treatment"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-water"></i>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -647,8 +680,8 @@
                                     </div>
 
                                     <div class="service-icon-box-content">
-                                        <p>Advanced system flushing and chemical treatment to eliminate
-                                            corrosion and maintain scaling control.</p>
+                                        <p>Advanced system flushing and chemical treatment to eliminate corrosion and
+                                            maintain scaling control.</p>
                                         <a href="javascript:;"
                                             class="site-button-link site-text-primary open-modal-link">Read More</a>
                                     </div>
@@ -656,14 +689,14 @@
                                 </div>
                             </div>
 
-                            <!-- COLUMNS 6: Safety Inspections -->
                             <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                                 <div class="service-icon-box-three shadow-bx text-center" data-service="inspections">
 
                                     <div class="wt-icon-box-wraper circle-bg scale-up-center">
                                         <div class="icon-lg inline-icon">
-                                            <span class="icon-cell"><img src="images/home-11/icon/pic-4.png"
-                                                    alt="Safety Inspections"></span>
+                                            <span class="icon-cell">
+                                                <i class="bx bx-shield-quarter"></i>
+                                            </span>
                                         </div>
                                     </div>
 
@@ -863,6 +896,178 @@
             </div>
             <!-- INTRO SECTION END -->
 
+            <!-- OUR TEAM START -->
+            <div class="section-full p-t90 p-b50 bg-white">
+
+                <div class="container">
+                    <div class="section-content">
+                        <div class="row justify-content-center d-flex">
+
+                            <div class="col-xl-8 col-lg-7 col-md-12 m-b30">
+                                <div class="team-carousel-wraper">
+                                    <div class="owl-carousel team-carousel owl-btn-bottom-left">
+
+                                        <div class="item">
+
+                                            <div class="wt-team-2">
+
+                                                <div class="wt-media">
+                                                    <img src="images/home-11/team/pic1.jpg" alt="">
+                                                    <div class="team-social-center">
+                                                        <ul class="team-social-icon">
+                                                            <li><a href="https://www.facebook.com/"><i
+                                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li><a href="https://x.com/"><i
+                                                                        class="fa-brands fa-x-twitter"></i></a></li>
+                                                            <li><a href="https://www.linkedin.com/"><i
+                                                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                                                            <li><a href="https://www.pinterest.com/"><i
+                                                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                                                            <li><a href="https://www.behance.net"><i
+                                                                        class="fa-brands fa-behance"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wt-info">
+                                                    <div class="team-detail  text-center">
+                                                        <h3 class="m-t0 m-b15"><a href="our-team-detail.html">Ronald
+                                                                Long</a></h3>
+                                                        <p>Contractor</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="item">
+
+                                            <div class="wt-team-2">
+
+                                                <div class="wt-media">
+                                                    <img src="images/home-11/team/pic2.jpg" alt="">
+                                                    <div class="team-social-center">
+                                                        <ul class="team-social-icon">
+                                                            <li><a href="https://www.facebook.com/"><i
+                                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li><a href="https://x.com/"><i
+                                                                        class="fa-brands fa-x-twitter"></i></a></li>
+                                                            <li><a href="https://www.linkedin.com/"><i
+                                                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                                                            <li><a href="https://www.pinterest.com/"><i
+                                                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                                                            <li><a href="https://www.behance.net"><i
+                                                                        class="fa-brands fa-behance"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wt-info">
+                                                    <div class="team-detail  text-center">
+                                                        <h3 class="m-t0 m-b15"><a href="our-team-detail.html">Ashley
+                                                                Sanchez</a></h3>
+                                                        <p>Contractor</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="item">
+
+                                            <div class="wt-team-2">
+
+                                                <div class="wt-media">
+                                                    <img src="images/home-11/team/pic3.jpg" alt="">
+                                                    <div class="team-social-center">
+                                                        <ul class="team-social-icon">
+                                                            <li><a href="https://www.facebook.com/"><i
+                                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li><a href="https://x.com/"><i
+                                                                        class="fa-brands fa-x-twitter"></i></a></li>
+                                                            <li><a href="https://www.linkedin.com/"><i
+                                                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                                                            <li><a href="https://www.pinterest.com/"><i
+                                                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                                                            <li><a href="https://www.behance.net"><i
+                                                                        class="fa-brands fa-behance"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wt-info">
+                                                    <div class="team-detail  text-center">
+                                                        <h3 class="m-t0 m-b15"><a href="our-team-detail.html">Juliana
+                                                                Bryant</a></h3>
+                                                        <p>Contractor</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="item">
+
+                                            <div class="wt-team-2">
+
+                                                <div class="wt-media">
+                                                    <img src="images/home-11/team/pic4.jpg" alt="">
+                                                    <div class="team-social-center">
+                                                        <ul class="team-social-icon">
+                                                            <li><a href="https://www.facebook.com/"><i
+                                                                        class="fa-brands fa-facebook-f"></i></a></li>
+                                                            <li><a href="https://x.com/"><i
+                                                                        class="fa-brands fa-x-twitter"></i></a></li>
+                                                            <li><a href="https://www.linkedin.com/"><i
+                                                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                                                            <li><a href="https://www.pinterest.com/"><i
+                                                                        class="fa-brands fa-pinterest-p"></i></a></li>
+                                                            <li><a href="https://www.behance.net"><i
+                                                                        class="fa-brands fa-behance"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wt-info">
+                                                    <div class="team-detail  text-center">
+                                                        <h3 class="m-t0 m-b15"><a href="our-team-detail.html">Shirley
+                                                                Gibson</a></h3>
+                                                        <p>Contractor</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-5 col-md-12 m-b30">
+                                <!-- TITLE START-->
+                                <div class="section-head left wt-small-separator-outer">
+                                    <div class="wt-small-separator site-text-primary">
+                                        <div>Our Best Team</div>
+                                    </div>
+                                    <h2 class="wt-title">We have a group of talented and trained members all the time.
+                                    </h2>
+                                    <p>We specialize in thermal efficiency diagnostics and strict safety protocols to
+                                        keep your heating infrastructure performing at its peak.</p>
+                                    <a href="our-team.html" class="site-button site-btn-effect">View All</a>
+                                </div>
+                                <!-- TITLE END-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- OUR TEAM SECTION END -->
+
             <!-- BUTTON TOP START -->
             <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
 
@@ -871,7 +1076,7 @@
         </div>
 
         <!-- LOADING AREA START ===== -->
-        <div class="loading-area">
+        <!-- <div class="loading-area">
             <div class="loading-box"></div>
             <div class="loading-pic">
 
@@ -894,7 +1099,7 @@
                     <span class="block-16"></span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- LOADING AREA  END ====== -->
 
         <!-- JAVASCRIPT  FILES -->
